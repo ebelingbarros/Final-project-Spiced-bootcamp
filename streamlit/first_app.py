@@ -12,7 +12,7 @@ st.write('Demo little app with our _beloved_ **penguins dataset** to learn about
 
 st.header('The Data')
 st.write('The palmer penguins data set containing measurements of penguins of different species.')
-st.image('lter_penguins.png')
+#st.image('lter_penguins.png')
 
 df = pd.read_csv('penguins_pimped.csv')
 df.dropna(inplace=True)
