@@ -7,5 +7,3 @@ sqlalchemy==1.3.24
 networkx
 altair
 sqlalchemy
-PIL
-variables
