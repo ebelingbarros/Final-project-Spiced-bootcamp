@@ -13,6 +13,7 @@ import networkx as nx
 import altair as alt
 from PIL import Image
 from variables import *
+import seaborn as sns
 
 
 def set_home():
