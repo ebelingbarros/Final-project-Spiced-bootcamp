@@ -41,13 +41,29 @@ def set_home():
 
     with col2:
         image = Image.open('images/buy_sell.jpeg')
-        st.image(image, caption='Credit: Cartoon by Cal for "The Economist"', use_column_width='always')
+        st.image(image, caption='Sell or buy?"', use_column_width='always')
+
+    with col3:
+        st.write("")
+        
+    st.markdown("<h3 style='text-align: center; color: black;'>Project Workflow</h3>", unsafe_allow_html=True)
+    col1, col2, col3 = st.columns([1,8,1])
+
+    
+    with col1:
+        st.write("")
+
+    with col2:
+        image = Image.open('images/process.png')
+        st.image(image, caption='Project workflow', use_column_width='always')
 
     with col3:
         st.write("")
    
     with st.container():
         st.write(intro_sources, unsafe_allow_html=True)
+        
+        
         
     
 def data():
@@ -188,7 +204,7 @@ def sentiment_analysis():
     # twin object for two different y-axis on the sample plot
     ax2=ax.twinx()
     # make a plot with different y-axis using second axis object
-    ax2.plot(corpus_crude_oil.year, corpus_crude_oil["oil_production"],color="brown",marker="o", label='Oil production')
+    ax2.plot(corpus_crude_oil.year, corpus_crude_oil["oil_production"],color="orange",marker="o", label='Oil production')
     ax.figure.legend()
     st.pyplot(fig)
 
@@ -221,7 +237,7 @@ def modelling():
         # twin object for two different y-axis on the sample plot
         #ax=ax.twinx()
         # make a plot with different y-axis using second axis object
-        ax.plot(corpus_oil_price_resampled2_2.date, corpus_oil_price_resampled2_2["Brent"],color="green",marker="o", label='Observed oil prices')
+        ax.plot(corpus_oil_price_resampled2_2.date, corpus_oil_price_resampled2_2["Brent"],color="darkblue",marker="o", label='Observed oil prices')
         ax.figure.legend()
         for index, label in enumerate(ax.get_xticklabels()):
            if index % 2 == 0:
@@ -247,7 +263,7 @@ def modelling():
         # twin object for two different y-axis on the sample plot
         #ax2=ax.twinx()
         # make a plot with different y-axis using second axis object
-        ax.plot(corpus_oil_price_resampled2_3.date, corpus_oil_price_resampled2_3["Brent"],color="green",marker="o", label='Observed oil prices')
+        ax.plot(corpus_oil_price_resampled2_3.date, corpus_oil_price_resampled2_3["Brent"],color="darkblue",marker="o", label='Observed oil prices')
         ax.figure.legend()
         for index, label in enumerate(ax.get_xticklabels()):
            if index % 2 == 0:
@@ -273,7 +289,7 @@ def modelling():
         # twin object for two different y-axis on the sample plot
         #ax2=ax.twinx()
         # make a plot with different y-axis using second axis object
-        ax.plot(corpus_oil_price_resampled2_4.date, corpus_oil_price_resampled2_4["Brent"],color="green",marker="o", label='Observed oil prices')
+        ax.plot(corpus_oil_price_resampled2_4.date, corpus_oil_price_resampled2_4["Brent"],color="darkblue",marker="o", label='Observed oil prices')
         ax.figure.legend()
         for index, label in enumerate(ax.get_xticklabels()):
            if index % 2 == 0:
@@ -369,6 +385,11 @@ def network():
         "",
         ("Oil Prices", "Renewable energies"),
     )
+        st.markdown('In what follows, the scraped data is tokenized, treated for stopwords, and grouped into nodes using a Simple Co-occurrence Network.')
+        
+        with st.container():
+            st.write(intro_explain, unsafe_allow_html=True)
+   
         if menu_network == "Oil Prices":
             with st.container():
                 st.subheader("Oil prices")
@@ -377,16 +398,14 @@ def network():
                 chart_data = pd.read_csv('data/oil_prices_2.csv', index_col=0)
                 st.write("**Oil prices (Brent) in US$D**")
 
-                st.altair_chart(alt.Chart(chart_data.reset_index()).mark_trail()
+                st.altair_chart(alt.Chart(chart_data.reset_index()).mark_line()
                     .encode(x = alt.X('index:T', axis=alt.Axis(title='Years')),
-                            y = alt.Y('Brent:Q', axis=alt.Axis(title='Brent in US$')), 
-                            size='Brent:Q')
-                    .configure_mark(
+                            y = alt.Y('Brent:Q', axis=alt.Axis(title='Brent in US$'))).configure_mark(
                     opacity=0.8,
                     color='cyan'
                 ), use_container_width=True)    
                 
-                st.markdown('In what follows, the scraped data for the category "oil prices" is tokenized, treated for stopwords, and grouped into nodes using a Simple Co-occurrence Network.')
+                st.subheader("Yearly Co-occurence networks")
                 year_selected = st.slider("Select year", 2010, 2021)
                 if year_selected == 2010:
                     st.image('images/oil2010.png')
@@ -413,12 +432,12 @@ def network():
                 elif year_selected == 2021:
                     st.image('images/oil2021.png')
         
-                st.subheader(f'A list of top words in the database')
+                st.subheader(f'A list of top words in the database (2010-2021)')
                 source = pd.read_csv('data/word_cnt_df_oil_price.csv', index_col=0)
 
                 st.altair_chart(alt.Chart(source).mark_bar()
                         .encode(x='cnt:Q',
-                                y=alt.Y('word:N', sort='-x'))
+                                y=alt.Y('word:N', sort='-x'), color='cnt')
                         .configure_mark(opacity=0.8,color='cyan'), 
                         use_container_width=True)
                                                            
@@ -431,12 +450,11 @@ def network():
                 chart_data = pd.read_csv('data/renewable_energy_consumption_2.csv', index_col=0)
                 st.write("**Evolution of Renewable Energy Consumption (Trillion Btu) in the US**")
                 st.altair_chart(alt.Chart(chart_data.reset_index())
-                    .mark_trail().encode(x = alt.X('index:T', axis=alt.Axis(title='Years')),y = alt.Y('Total_renewable_consumption:Q', axis=alt.Axis(title='Renewable energy consumption')), size='Total_renewable_consumption:Q').configure_mark(
+                    .mark_line().encode(x = alt.X('index:T', axis=alt.Axis(title='Years')),y = alt.Y('Total_renewable_consumption:Q', axis=alt.Axis(title='Renewable energy consumption'))).configure_mark(
                     opacity=0.8,
                     color='green'
                 ), use_container_width=True)     
-                
-                st.markdown('In what follows, the scraped data for the category "renewable energy" is tokenized, treated for stopwords, and grouped into nodes using a Simple Co-occurrence Network.')
+                st.subheader("Yearly Co-occurence networks")
                 year_selected = st.slider("Select year", 2010, 2021)
                 if year_selected == 2010:
                     st.image('images/energy2010.png')
@@ -463,12 +481,12 @@ def network():
                 elif year_selected == 2021:
                     st.image('images/energy2021.png')      
                 
-                st.subheader(f'A list of top words in the database')
+                st.subheader(f'A list of top words in the database (2010-2021')
                 source = pd.read_csv('data/word_cnt_df_renewables.csv', index_col=0)
 
                 st.altair_chart(alt.Chart(source).mark_bar()
                         .encode(x='cnt:Q',
-                                y=alt.Y('word:N', sort='-x'))
+                                y=alt.Y('word:N', sort='-x'), color='cnt')
                         .configure_mark(opacity=0.8,color='green'), 
                         use_container_width=True)
 
