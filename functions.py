@@ -8,7 +8,6 @@ import plotly.figure_factory as ff
 import plotly.graph_objs as go
 from plotly import tools
 import matplotlib.pyplot as plt
-import seaborn as sns
 from sqlalchemy import create_engine
 import networkx as nx
 import altair as alt
