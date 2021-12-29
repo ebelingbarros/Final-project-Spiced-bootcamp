@@ -8,8 +8,25 @@ For this purpose, I scrape ~ 9000 articles from oilprice.com's `oil-price`, `alt
 
 
 ## File Descriptions
-- `capstone_notebook.ipynb`: The code contained in this Jupyter notebook cleans and prepares the data, carries out the EDA analysis and generates the Machine Learning regression model.
-- `data`: The folder contains the exame500.csv csv file, in which the data for the project is stored.
+- `gathering_data.ipynb`: This notebook contains the code used to download the articles and to create a dataframe with the obtained texts.
+- `sentiment_analysis.ipynb`: The sentiment analysis is performed on this notebook
+- `sentiment_analysis_regression.ipynb`: Notebook with the regression exercises with Random Forest
+- `nlp_notebook.ipynb`: Notebook with some further NLP preprocessing steps
+- `nlp_notebook_model-network-analysis.ipynb`: The network analysis using NetworkX is conducted in this notebook
+- `exploratory_data_analysis.ipynb`: Notebook with some further Exploratory Data Analysis
+- `data`: The folder contains the csv files used in this project.
+
+
+sentiment_analysis_regression.ipynb
+
+https://github.com/ebelingbarros/Final-project-Spiced-bootcamp/blob/main/gathering_data.ipynb
+
+https://github.com/ebelingbarros/Final-project-Spiced-bootcamp/blob/main/nlp_notebook_model-network-analysis.ipynb
+
+https://github.com/ebelingbarros/Final-project-Spiced-bootcamp/blob/main/nlp_notebook_model.ipynb
+
+https://github.com/ebelingbarros/Final-project-Spiced-bootcamp/blob/main/eda2.ipynb
+
 
 ## Methodology
 
