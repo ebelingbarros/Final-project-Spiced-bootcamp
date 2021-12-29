@@ -19,7 +19,7 @@ For this purpose, I scrape ~ 9000 articles from oilprice.com's `oil-price`, `alt
 - `data`: The folder contains the csv files used in this project.
 - `setup.sh`: file needed for the Streamlit app's deployment
 - `Procfile`: file needed for the Streamlit app's deployment
-- 'requirements.txt`: file needed for the Streamlit app's deployment
+- `requirements.txt`: file needed for the Streamlit app's deployment
 
 ## Methodology
 
