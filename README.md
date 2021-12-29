@@ -45,6 +45,10 @@ xxxxx
 
 
 ## Acknowledgments
+### A general note
+
+I'm highly indebted to Spiced's academy teaching team for the wonderful classes and course material. A special thanks goes to Paula, Arjun and Joseph.
+
 ### Streamlit sites and code
 - The ["NYC Uber Ridesharing Data"](https://share.streamlit.io/streamlit/demo-uber-nyc-pickups/) and the ["Público, crítica y taquilla en IMDb"](https://share.streamlit.io/casiopa/eda-imdb/main/src/utils/streamlit/EDA_IMDb_main.py) Streamlit apps where awesome sources of inspiration for its structuration.
 
