@@ -4,7 +4,7 @@ The code presented in this repository was written in Python 3. These are the mai
 
 ## Introduction, project motivation and data
 The main objective of this project is to analyse whether NLP techniques and sentiment analysis can be used as features for oil price and renewable energy demand prediction.
-For this purpose, I scrape ~ 9000 articles from oilprice.com `oil-price`, `alternative-energy` and `crude-oil` tabs. Because I choose a regression problem, the scraped articles is processed using modern Sentiment Analysis techniques and used as features in Random Forest regression models. The scraped articles are also treated using modern NLP techniques and used to create network visualisations of more frequent words over time. The entire project is presented in a Streamlit app that is deployed to the web using Heroku.
+For this purpose, I scrape ~ 9000 articles from oilprice.com's `oil-price`, `alternative-energy` and `crude-oil` tabs. Because I choose a regression problem, the scraped articles are processed using modern Sentiment Analysis techniques and used as features in Random Forest regression models. The scraped articles are also treated using modern NLP techniques and used to create network visualisations of more frequent words over time. The entire project is presented in a Streamlit app that is deployed to the web using Heroku.
 
 
 ## File Descriptions
