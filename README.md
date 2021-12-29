@@ -6,8 +6,8 @@ The code presented in this repository was written in Python 3. These are the mai
 xxxxx
 
 ## File Descriptions
-capstone_notebook.ipynb: The code contained in this Jupyter notebook cleans and prepares the data, carries out the EDA analysis and generates the Machine Learning regression model.
-data: The folder contains the exame500.csv csv file, in which the data for the project is stored.
+- `capstone_notebook.ipynb`: The code contained in this Jupyter notebook cleans and prepares the data, carries out the EDA analysis and generates the Machine Learning regression model.
+- `data`: The folder contains the exame500.csv csv file, in which the data for the project is stored.
 
 ## Methodology
 
@@ -28,11 +28,20 @@ xxxxx
 
 
 xxxxxx
+## Streamlit
+
+<video width="320" height="240" controls>
+  <source src="video.mov" type="video/mp4">
+</video>
+
 
 ## Conclusions and next steps
 xxxxx
 
 The entire Medium post regarding these conclusions can be read here.
+
+
+
 
 ## Acknowledgments
 ### Streamlit sites and code
