@@ -3,7 +3,7 @@
 The code presented in this repository was written in Python 3. These are the main Python packages required for it to work: `Pandas`, `Numpy`, `Seaborn`, `Plotly`, `Matplotlib`, `Sklearn`, `BeautifulSoup`, `Requests`, `Json`, `Spacy`, `Streamlit`, `NetworkX`, `SqlAlchemy` and `Altair`.
 
 ## Introduction, project motivation and data
-xxxxx
+The main objective of this project is to analyse whether NLP techniques and sentiment analysis can be used as features for oil price and renewable energy demand prediction.
 
 ## File Descriptions
 - `capstone_notebook.ipynb`: The code contained in this Jupyter notebook cleans and prepares the data, carries out the EDA analysis and generates the Machine Learning regression model.
