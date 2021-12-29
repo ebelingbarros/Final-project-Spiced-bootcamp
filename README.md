@@ -33,6 +33,11 @@ The methodology of the project closely follows the following process chart, alth
 
 [![IMAGE ALT TEXT](https://vimeo.com/660938451)
 
+
+
+
+[![Little red ridning hood](https://github.com/ebelingbarros/Final-project-Spiced-bootcamp/blob/main/images/alternative.png)](https://vimeo.com/660938451 "Little red riding hood - Click to Watch!")
+
 ## Conclusions and next steps
 xxxxx
 
