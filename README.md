@@ -10,8 +10,13 @@ capstone_notebook.ipynb: The code contained in this Jupyter notebook cleans and 
 data: The folder contains the exame500.csv csv file, in which the data for the project is stored.
 
 ## Methodology
-1. Data cleaning and preprocessing
-2. Exploratory Data Analysis
+
+
+<p align="center">
+  <img width="80%" height="100%" src="https://github.com/ebelingbarros/Final-project-Spiced-bootcamp/blob/main/images/process.png"> 
+</p> 
+
+
 
 
 3. Building the model
