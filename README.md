@@ -23,23 +23,12 @@ For this purpose, I scrape ~ 9000 articles from oilprice.com's `oil-price`, `alt
 
 ## Methodology
 
+The methodology of the project closely follows the following process chart, although not necessarily in chronological order. After extracting and processing the articles with Jupyter Notebooks, I work with Streamlit .py files for creating visualisations and presenting the project. As a final step, I deploy the app to the web using Heroku.
 
 <p align="center">
   <img width="80%" height="100%" src="https://github.com/ebelingbarros/Final-project-Spiced-bootcamp/blob/main/images/process.png"> 
 </p> 
 
-
-
-
-3. Building the model
-xxxx
-
-4. Model Evaluation
-xxxxx
-
-
-
-xxxxxx
 ## Streamlit
 
 
