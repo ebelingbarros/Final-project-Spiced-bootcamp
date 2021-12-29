@@ -29,7 +29,7 @@ The methodology of the project closely follows the following process chart, alth
   <img width="80%" height="100%" src="https://github.com/ebelingbarros/Final-project-Spiced-bootcamp/blob/main/images/process.png"> 
 </p> 
 
-## Streamlit
+## Streamlit App
 
 The entire project's results and visualisations are presented in a Streamlit app, which is deployed to the web with Heroku. Click **[here](https://energy-sentiment-analysis.herokuapp.com/)** to access the app.
 
