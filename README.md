@@ -31,8 +31,9 @@ The methodology of the project closely follows the following process chart, alth
 
 ## Streamlit
 
-
-
+<p align="center">
+  <img width="80%" height="100%" src="https://github.com/ebelingbarros/Final-project-Spiced-bootcamp/blob/main/images/streamlit_app_gif.gif"> 
+</p> 
 
 
 ## Conclusions and next steps
