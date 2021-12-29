@@ -31,17 +31,17 @@ The entire Medium post regarding these conclusions can be read here.
 
 ## Acknowledgments
 ### Streamlit sites and code
-- The "NYC Uber Ridesharing Data" and the "Público, crítica y taquilla en IMDb" Streamlit apps where awesome sources of inspiration for its structuration.
+- The ["NYC Uber Ridesharing Data"](https://share.streamlit.io/streamlit/demo-uber-nyc-pickups/) and the ["Público, crítica y taquilla en IMDb"](https://share.streamlit.io/casiopa/eda-imdb/main/src/utils/streamlit/EDA_IMDb_main.py) Streamlit apps where awesome sources of inspiration for its structuration.
 
-- The simple co-ocurrence network analysis is based on Gin04kg's notebook.
+- The simple co-ocurrence network analysis is based on [Gin04kg's](https://www.kaggle.com/itoeiji/simple-co-occurrence-network) notebook.
 
-- The estimation of a Random Forest models for, respectively, oil prices and renewable energy consumption, considering sentiment analysis is based on Bee Guan Teo's notebook.
+- The estimation of a Random Forest models for, respectively, oil prices and renewable energy consumption, considering sentiment analysis is based on [Bee Guan Teo's](https://python.plainenglish.io/how-to-predict-stock-prices-change-with-random-forest-in-python-f707e101d5c4) notebook.
 
 ### Images
-- Cartoon by Kal on The Economist
+- Cartoon by [Kal](https://www.kaltoons.com/) on [The Economist](https://www.economist.com/)
 
-- Stocks photo by Arvind Vallabh on Unsplash
+- Stocks photo by [Arvind Vallabh](https://unsplash.com/@vallabh1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/)
 
-- Renewable energy photo by m. on Unsplash
+- Renewable energy photo by [m.](https://unsplash.com/@m_____me?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/)
 
-- Oil rig photo by American Public Power Association on Unsplash
+- Oil rig photo by [American Public Power Association](https://unsplash.com/@publicpowerorg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/)
