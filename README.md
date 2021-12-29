@@ -1,4 +1,4 @@
-# Spiced Data Science bootcamp final project: NLP and Sentiment Analysis with oil and renewable energy articles
+# Spiced Data Science bootcamp final project: NLP and Sentiment Analysis with oil price and renewable energy articles
 ## Libraries
 The code presented in this repository was written in Python 3. These are the main Python packages required for it to work: `Pandas`, `Numpy`, `Seaborn`, `Plotly`, `Matplotlib`, `Sklearn`, `BeautifulSoup`, `Requests`, `Json`, `Spacy`, `Streamlit`, `NetworkX`, `SqlAlchemy` and `Altair`.
 
