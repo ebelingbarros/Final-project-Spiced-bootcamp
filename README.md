@@ -20,7 +20,7 @@ For this purpose, I scrape ~ 9000 articles from oilprice.com's `oil-price`, `alt
 - `setup.sh`: file needed for the Streamlit app's deployment
 - `Procfile`: file needed for the Streamlit app's deployment
 - `requirements.txt`: file needed for the Streamlit app's deployment
-- `oil1.db`
+- `oil_1.db`, `oil_2.db`, `oil_3.db`, `energy1.db`, `energy2.db`, `energy3.db`: files created by SQLLite that store data used in the regression models
 
 ## Methodology
 
