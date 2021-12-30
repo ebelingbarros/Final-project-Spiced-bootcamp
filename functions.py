@@ -45,7 +45,9 @@ def set_home():
 
     with col3:
         st.write("")
-        
+    
+    st.write('The main objective of this project is to analyse whether NLP techniques and sentiment analysis can be used as features for oil price and renewable energy demand prediction. For this purpose, I scrape ~ 9000 articles the "oil-price", "alternative-energy" and "crude-oil" tabs from the oilprice.com website. Because I choose a regression problem, the scraped articles are processed using modern Sentiment Analysis techniques and used as features in Random Forest regression models. The scraped articles are also treated using modern NLP techniques and used to create network visualisations of more frequent words over time. The entire project is presented in a Streamlit app that is deployed to the web using Heroku. The methodology of the project closely follows the following process chart, although not necessarily in chronological order.') 
+    
     st.markdown("<h3 style='text-align: center; color: black;'>Project Workflow</h3>", unsafe_allow_html=True)
     col1, col2, col3 = st.columns([1,8,1])
 
@@ -387,9 +389,6 @@ def network():
     )
         st.markdown('In what follows, the scraped data is tokenized, treated for stopwords, and grouped into nodes using a Simple Co-occurrence Network.')
         
-        with st.container():
-            st.write(intro_explain, unsafe_allow_html=True)
-   
         if menu_network == "Oil Prices":
             with st.container():
                 st.subheader("Oil prices")
@@ -440,7 +439,10 @@ def network():
                                 y=alt.Y('word:N', sort='-x'), color='cnt')
                         .configure_mark(opacity=0.8,color='cyan'), 
                         use_container_width=True)
-                                                           
+            with st.container():
+                st.write(intro_explain, unsafe_allow_html=True)
+            
+            
         elif menu_network == "Renewable energies":
              with st.container():
                 st.subheader("Renewable energies")
@@ -489,7 +491,8 @@ def network():
                                 y=alt.Y('word:N', sort='-x'), color='cnt')
                         .configure_mark(opacity=0.8,color='green'), 
                         use_container_width=True)
-
+                with st.container():
+                    st.write(intro_explain, unsafe_allow_html=True)
 
                 
                 

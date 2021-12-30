@@ -1,8 +1,7 @@
 intro_explain = '''
 
 ---
-#### Creating a network visualisation*
-*Provisory location in the app
+#### Creating a network visualisation
 
 ##### Steps 1 and 2: 
 
